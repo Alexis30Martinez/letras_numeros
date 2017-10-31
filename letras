@@ -1,0 +1,14 @@
+def letras():
+    for i in range(ord('a'), ord('m')+1):
+        yield (chr(i))
+
+if __name__== "main":
+    letras = letras()
+    try:
+        for i in range(ord('m')):
+            print(next(letras))
+            if i == 'm':
+                break
+    except Exception as l:
+        print(l)
+
